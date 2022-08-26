@@ -1,0 +1,29 @@
+Well done!
+
+4.
+b)
+You can insert multiple rows by having it divided by comma, like this:
+INSERT INTO Production.UnitMeasure
+VALUES 
+('TT1', 'Test1', '2020-09-09'),
+('TT2','Test2',GETDATE())
+
+Also, I think you missed part of the task with adding one more row.
+INSERT INTO Production.UnitMeasureTest
+SELECT *
+FROM Production.UnitMeasure
+WHERE UnitMeasureCode='CAN'
+
+e) -1
+The task was to use window functions, like
+SELECT SalesOrderID,			
+		MIN (LineTotal) OVER (PARTITION BY SalesOrderID) AS min,
+		MAX (LineTotal) OVER (PARTITION BY SalesOrderID) AS max,
+		AVG (LineTotal) OVER (PARTITION BY SalesOrderID) AS avg
+FROM Sales.SalesOrderDetail
+WHERE SalesOrderID IN (43659,43664)
+
+g)
+The task was not to find the solution, but to create yours.
+
+Mark: 9.

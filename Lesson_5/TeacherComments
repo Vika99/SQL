@@ -1,0 +1,25 @@
+Well done!
+
+7.
+Temperature is not an integer.
+Please use CONCAT instead of +. In this task you definitely know that ine of the values can be NULL. Using +, you will get null email.
+
+12. -1
+Let's take your solution from the previous homework:
+SELECT CASE
+         WHEN Datename(dw, Dateadd(dd, -Datepart(dd, Getdate()) + 1, Getdate())) = 'Saturday' THEN Dateadd(dd, -Datepart(dd, Getdate()) + 3, Getdate())
+         WHEN Datename(dw, Dateadd(dd, -Datepart(dd, Getdate()) + 1, Getdate())) = 'Sunday' THEN Dateadd(dd, -Datepart(dd, Getdate()) + 2, Getdate())
+         ELSE Datename(dw, Dateadd(dd, -Datepart(dd, Getdate()) + 1, Getdate()))
+       END
+
+The idea of this task was to replace the longest common part with a parameter. For example,
+
+DECLARE @datename varchar(15)=Datename(dw, Dateadd(dd, -Datepart(dd, Getdate()) + 1, Getdate()))
+
+SELECT CASE
+         WHEN @datename = 'Saturday' THEN Dateadd(dd, -Datepart(dd, Getdate()) + 3, Getdate())
+         WHEN @datename = 'Sunday' THEN Dateadd(dd, -Datepart(dd, Getdate()) + 2, Getdate())
+         ELSE @datename 
+       END
+
+Mark: 9
