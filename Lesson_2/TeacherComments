@@ -1,0 +1,20 @@
+Well done!
+
+Please add all the tasks to one file. Also you don't need to add comment signs before and after query itself. It's a part of the code, so it can be run.
+
+1. 
+d) -0.5 
+There is no requirements in the task to rearrange the results, so order by is not needed.
+
+4. 
+a) -1 
+Correct answer: ... WHERE LastName LIKE 'M%' OR NOT EmailPromotion LIKE '%1%'
+Second condition is not "equal", it's "including". For example, if after next data update there is a EmailPromotion 3451654, it should be added to the final result set.
+d) -0.25 
+When you comment part of the code how should I treat this? :) 
+Weight and size with NULL will not be calculated in the aggregative function. When they appear in the result set, it means that there are no results for this id, which is correct.
+I understand your position and why you applied these filters. Probably, you thought that it's more correct from the business side. But you overthink the task. 
+e) -0.25 
+The same issue as in the d. 
+
+Mark: 8  
