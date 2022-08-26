@@ -1,0 +1,967 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.0917.1006                               -->
+<workbook original-version='18.1' source-build='2021.3.1 (20213.21.0917.1006)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelRelationshipPerfOptions.true...ObjectModelRelationshipPerfOptions />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Competitions+ (TestSwimCompetition)' inline='true' name='federated.1p7wp8w07ysn7m11te01100xd8cn' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='DESKTOP-33E5I1V\SQLEXPRESS' name='sqlserver.0n93t9v1xd1aq61008eu41ob89vj'>
+            <connection authentication='sspi' class='sqlserver' dbname='TestSwimCompetition' minimum-driver-version='SQL Server Native Client 10.0' odbc-native-protocol='yes' one-time-sql='' server='DESKTOP-33E5I1V\SQLEXPRESS' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='sqlserver.0n93t9v1xd1aq61008eu41ob89vj' name='Competitions' table='[dbo].[Competitions]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='sqlserver.0n93t9v1xd1aq61008eu41ob89vj' name='Competitions' table='[dbo].[Competitions]' type='table' />
+          <relation connection='sqlserver.0n93t9v1xd1aq61008eu41ob89vj' name='Swimmer' table='[dbo].[Swimmer]' type='table' />
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>CompID</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[CompID]</local-name>
+            <parent-name>[Competitions]</parent-name>
+            <remote-alias>CompID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Competitions_C0A2382C8BC3413EA1145F3F13AAFB2D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StyleID</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[StyleID]</local-name>
+            <parent-name>[Competitions]</parent-name>
+            <remote-alias>StyleID</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Competitions_C0A2382C8BC3413EA1145F3F13AAFB2D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ResTime</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[ResTime]</local-name>
+            <parent-name>[Competitions]</parent-name>
+            <remote-alias>ResTime</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <precision>7</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIME&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIME&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Competitions_C0A2382C8BC3413EA1145F3F13AAFB2D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DisqID</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[DisqID]</local-name>
+            <parent-name>[Competitions]</parent-name>
+            <remote-alias>DisqID</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Competitions_C0A2382C8BC3413EA1145F3F13AAFB2D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CompDate</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[CompDate]</local-name>
+            <parent-name>[Competitions]</parent-name>
+            <remote-alias>CompDate</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+              <attribute datatype='boolean' name='TypeIsDateTime2orDate'>true</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Competitions_C0A2382C8BC3413EA1145F3F13AAFB2D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PoolID</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[PoolID]</local-name>
+            <parent-name>[Competitions]</parent-name>
+            <remote-alias>PoolID</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Competitions_C0A2382C8BC3413EA1145F3F13AAFB2D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SwimmerId</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[SwimmerId]</local-name>
+            <parent-name>[Competitions]</parent-name>
+            <remote-alias>SwimmerId</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Competitions_C0A2382C8BC3413EA1145F3F13AAFB2D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SwimmerID</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[SwimmerID]</local-name>
+            <parent-name>[Swimmer]</parent-name>
+            <remote-alias>SwimmerID</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TrainerID</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[TrainerID]</local-name>
+            <parent-name>[Swimmer]</parent-name>
+            <remote-alias>TrainerID</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FirstName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[FirstName]</local-name>
+            <parent-name>[Swimmer]</parent-name>
+            <remote-alias>FirstName</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='0' name='LROOT' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LastName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[LastName]</local-name>
+            <parent-name>[Swimmer]</parent-name>
+            <remote-alias>LastName</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='0' name='LROOT' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PassportNumber</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[PassportNumber]</local-name>
+            <parent-name>[Swimmer]</parent-name>
+            <remote-alias>PassportNumber</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='0' name='LROOT' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[Swimmer]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='0' name='LROOT' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BirthDate</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[BirthDate]</local-name>
+            <parent-name>[Swimmer]</parent-name>
+            <remote-alias>BirthDate</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+              <attribute datatype='boolean' name='TypeIsDateTime2orDate'>true</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CareerStart</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[CareerStart]</local-name>
+            <parent-name>[Swimmer]</parent-name>
+            <remote-alias>CareerStart</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+              <attribute datatype='boolean' name='TypeIsDateTime2orDate'>true</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rank</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Rank]</local-name>
+            <parent-name>[Swimmer]</parent-name>
+            <remote-alias>Rank</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='0' name='LROOT' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Swimmer]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='0' name='LROOT' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DopingRec</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[DopingRec]</local-name>
+            <parent-name>[Swimmer]</parent-name>
+            <remote-alias>DopingRec</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_BIT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Birth Date' datatype='date' name='[BirthDate]' role='dimension' type='ordinal' />
+      <column caption='Career Start' datatype='date' name='[CareerStart]' role='dimension' type='ordinal' />
+      <column caption='Comp Date' datatype='date' name='[CompDate]' role='dimension' type='ordinal' />
+      <column caption='Comp ID' datatype='integer' name='[CompID]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column aggregation='Sum' caption='Disq ID' datatype='integer' name='[DisqID]' role='dimension' type='ordinal' />
+      <column caption='Doping Rec' datatype='boolean' name='[DopingRec]' role='dimension' type='nominal' />
+      <column caption='First Name' datatype='string' name='[FirstName]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+      <column caption='Last Name' datatype='string' name='[LastName]' role='dimension' type='nominal' />
+      <column caption='Passport Number' datatype='string' name='[PassportNumber]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Pool ID' datatype='integer' name='[PoolID]' role='dimension' type='ordinal' />
+      <column aggregation='Hour' caption='Res Time' datatype='datetime' name='[ResTime]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Style ID' datatype='integer' name='[StyleID]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Swimmer ID' datatype='integer' name='[SwimmerID]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Swimmer Id' datatype='integer' name='[SwimmerId]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Trainer ID' datatype='integer' name='[TrainerID]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Competitions' datatype='table' name='[__tableau_internal_object_id__].[Competitions_C0A2382C8BC3413EA1145F3F13AAFB2D]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Swimmer' datatype='table' name='[__tableau_internal_object_id__].[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]' role='measure' type='quantitative' />
+      <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/laptop/Desktop/Vika_Voronchuk/Lesson_19/Competitions+ (TestSwimCompetition).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='10/15/2021 05:31:57 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Competitions_C0A2382C8BC3413EA1145F3F13AAFB2D' table='[Extract].[Competitions_C0A2382C8BC3413EA1145F3F13AAFB2D]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+            <relation name='Competitions_C0A2382C8BC3413EA1145F3F13AAFB2D' table='[Extract].[Competitions_C0A2382C8BC3413EA1145F3F13AAFB2D]' type='table' />
+            <relation name='Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B' table='[Extract].[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]' type='table' />
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <refresh>
+            <refresh-event add-from-file-path='Competitions+ (TestSwimCompetition)' increment-value='%null%' refresh-type='create' rows-inserted='17403' timestamp-start='2021-10-15 17:31:51.902' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>CompID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CompID]</local-name>
+              <parent-name>[Competitions_C0A2382C8BC3413EA1145F3F13AAFB2D]</parent-name>
+              <remote-alias>CompID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Competitions</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1010</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Competitions_C0A2382C8BC3413EA1145F3F13AAFB2D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>StyleID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[StyleID]</local-name>
+              <parent-name>[Competitions_C0A2382C8BC3413EA1145F3F13AAFB2D]</parent-name>
+              <remote-alias>StyleID</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Competitions</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Competitions_C0A2382C8BC3413EA1145F3F13AAFB2D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ResTime</remote-name>
+              <remote-type>134</remote-type>
+              <local-name>[ResTime]</local-name>
+              <parent-name>[Competitions_C0A2382C8BC3413EA1145F3F13AAFB2D]</parent-name>
+              <remote-alias>ResTime</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Competitions</family>
+              <local-type>datetime</local-type>
+              <aggregation>Hour</aggregation>
+              <approx-count>871</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Competitions_C0A2382C8BC3413EA1145F3F13AAFB2D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DisqID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[DisqID]</local-name>
+              <parent-name>[Competitions_C0A2382C8BC3413EA1145F3F13AAFB2D]</parent-name>
+              <remote-alias>DisqID</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Competitions</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>174</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Competitions_C0A2382C8BC3413EA1145F3F13AAFB2D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CompDate</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[CompDate]</local-name>
+              <parent-name>[Competitions_C0A2382C8BC3413EA1145F3F13AAFB2D]</parent-name>
+              <remote-alias>CompDate</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Competitions</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>338</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Competitions_C0A2382C8BC3413EA1145F3F13AAFB2D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PoolID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[PoolID]</local-name>
+              <parent-name>[Competitions_C0A2382C8BC3413EA1145F3F13AAFB2D]</parent-name>
+              <remote-alias>PoolID</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Competitions</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>623</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Competitions_C0A2382C8BC3413EA1145F3F13AAFB2D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SwimmerId</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[SwimmerId]</local-name>
+              <parent-name>[Competitions_C0A2382C8BC3413EA1145F3F13AAFB2D]</parent-name>
+              <remote-alias>SwimmerId</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Competitions</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1001</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Competitions_C0A2382C8BC3413EA1145F3F13AAFB2D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SwimmerID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[SwimmerID]</local-name>
+              <parent-name>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</parent-name>
+              <remote-alias>SwimmerID</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Swimmer</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16393</approx-count>
+              <contains-null>false</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TrainerID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TrainerID]</local-name>
+              <parent-name>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</parent-name>
+              <remote-alias>TrainerID</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Swimmer</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>68</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FirstName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[FirstName]</local-name>
+              <parent-name>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</parent-name>
+              <remote-alias>FirstName</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Swimmer</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>75</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LastName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[LastName]</local-name>
+              <parent-name>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</parent-name>
+              <remote-alias>LastName</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Swimmer</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>455</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PassportNumber</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PassportNumber]</local-name>
+              <parent-name>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</parent-name>
+              <remote-alias>PassportNumber</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Swimmer</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>16393</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Swimmer</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BirthDate</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[BirthDate]</local-name>
+              <parent-name>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</parent-name>
+              <remote-alias>BirthDate</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Swimmer</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>96</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CareerStart</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[CareerStart]</local-name>
+              <parent-name>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</parent-name>
+              <remote-alias>CareerStart</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Swimmer</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Rank</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Rank]</local-name>
+              <parent-name>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</parent-name>
+              <remote-alias>Rank</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Swimmer</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Swimmer</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>44</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DopingRec</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[DopingRec]</local-name>
+              <parent-name>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</parent-name>
+              <remote-alias>DopingRec</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Swimmer</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Gender:nk]' type='palette'>
+            <map to='#00007f'>
+              <bucket>&quot;M&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Bigender&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Genderqueer&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Non-binary&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Female&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Male&quot;</bucket>
+            </map>
+            <map to='#ff007f'>
+              <bucket>&quot;F&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Polygender&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Israel&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Competitions' id='Competitions_C0A2382C8BC3413EA1145F3F13AAFB2D'>
+            <properties context=''>
+              <relation connection='sqlserver.0n93t9v1xd1aq61008eu41ob89vj' name='Competitions' table='[dbo].[Competitions]' type='table' />
+            </properties>
+            <properties context='extract'>
+              <relation name='Competitions_C0A2382C8BC3413EA1145F3F13AAFB2D' table='[Extract].[Competitions_C0A2382C8BC3413EA1145F3F13AAFB2D]' type='table' />
+            </properties>
+          </object>
+          <object caption='Swimmer' id='Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B'>
+            <properties context=''>
+              <relation connection='sqlserver.0n93t9v1xd1aq61008eu41ob89vj' name='Swimmer' table='[dbo].[Swimmer]' type='table' />
+            </properties>
+            <properties context='extract'>
+              <relation name='Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B' table='[Extract].[Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[SwimmerId]' />
+              <expression op='[SwimmerID]' />
+            </expression>
+            <first-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-guaranteed-value='true' guaranteed-value='true' object-id='Competitions_C0A2382C8BC3413EA1145F3F13AAFB2D' />
+            <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='Swimmer_D5E35DE0E6B64C0AA9B60FEE760B8D0B' unique-key='true' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;swimmers&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Competitions+ (TestSwimCompetition)' name='federated.1p7wp8w07ysn7m11te01100xd8cn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1p7wp8w07ysn7m11te01100xd8cn'>
+            <column caption='First Name' datatype='string' name='[FirstName]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Rank]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Swimmer ID' datatype='integer' name='[SwimmerID]' role='dimension' type='ordinal' />
+            <column-instance column='[SwimmerID]' derivation='Count' name='[cnt:SwimmerID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[FirstName]' derivation='None' name='[none:FirstName:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Rank]' derivation='None' name='[none:Rank:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1p7wp8w07ysn7m11te01100xd8cn].[none:FirstName:nk]'>
+            <groupfilter from='&quot;Abagail&quot;' function='range' level='[none:FirstName:nk]' to='&quot;Welch&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1p7wp8w07ysn7m11te01100xd8cn].[none:FirstName:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1p7wp8w07ysn7m11te01100xd8cn].[none:Gender:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1p7wp8w07ysn7m11te01100xd8cn].[cnt:SwimmerID:qk]</rows>
+        <cols>[federated.1p7wp8w07ysn7m11te01100xd8cn].[none:Rank:nk]</cols>
+      </table>
+      <simple-id uuid='{5568DDB3-687A-481E-BB04-EF5D0F70D334}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='3' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{3D41DC9B-960F-4E73-A9F5-BF9C8FF1AC95}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1p7wp8w07ysn7m11te01100xd8cn].[none:FirstName:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1p7wp8w07ysn7m11te01100xd8cn].[none:Gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1p7wp8w07ysn7m11te01100xd8cn].[none:FirstName:nk]</field>
+            <field>[federated.1p7wp8w07ysn7m11te01100xd8cn].[none:Gender:nk]</field>
+            <field>[federated.1p7wp8w07ysn7m11te01100xd8cn].[none:Rank:nk]</field>
+            <field>[federated.1p7wp8w07ysn7m11te01100xd8cn].[none:SwimmerID:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{13F26C73-407C-4EFA-8CDA-C677BBA3CAC6}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{990B7EFD-6125-491B-A88F-71DDB4D2A0AD}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      RQyWQ+bOAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>

@@ -1,0 +1,20 @@
+Well done!
+
+2.
+What was the need to  join to jobs?
+Also, the task was to calculate min and max. There is no such columns. :)
+
+3. -1
+Code won't work. What you are comparing max(f.emp) to in the having clause?
+Idea is good. Although, it can be done without subquery.
+
+4. -1
+Code won't work.
+Solution:
+SELECT department_name, (AVG(salary) OVER (PARTITION BY department_id)/AVG(salary) OVER ())*100 AS diff_pct
+FROM Employees e JOIN Departments d ON dep.department_id=emp.department_id
+
+5. -1.5
+You have the whole job_history table for this purpose.
+
+Mark: 7.

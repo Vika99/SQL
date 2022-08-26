@@ -1,0 +1,41 @@
+1.	Написать запрос на добавление в таблицу manufacturer нового производителя HP из Америки.
+
+INSERT INTO manufacture (ID, Name,country_id) VALUES (5,”НР”,2)
+
+
+
+2.Написать запрос, благодаря которому возраст пользователя Андрей в таблице user уменьшится в 3 раза.
+
+
+Select name, (age/3) as newage
+From user
+Where name like “Андрей”
+
+Либо я бы еще сделала update:
+UPDATE user
+SET age=6
+WHERE Name= “Андрей”;
+
+3.Найти название продукта с максимальной ценой.
+Select *
+From( select name, price, dense_rank() over(partition by name order by price desc) as Rank
+ From product) ranks
+Where rank = 1
+
+
+4.Написать запрос на выборку всех пользователей с телефонами, начинающимися на 3 и заканчивающимися на 4, либо с возрастом > 35.
+Select u.name,p.name,u.age
+From user u
+Join phone p on u.id=p.user_id
+Where p.name like “3%4” (либо: Where p.name like “3___________4”)
+Or u.age>35
+
+
+5.Найти топ 5 пользователей, кто купил больше всего продуктов.
+SELECT top 5 name from (select u.name, o.user_id, count(product_id) from orders o join user u on o.user_id=u.id group by o.user_id ) as amount_products
+
+
+
+
+
+

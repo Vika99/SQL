@@ -1,0 +1,22 @@
+Well done!
+
+Homework
+With two versions side by side which one should I choose?
+attempt2:
+-1
+WHEN MATCHED AND  TARGET.Function_name = SOURCE.VikaVoronchuk : You're just dublicated one condition twice.
+-2
+Also you are not applying any logic to function_count. Null+1 is Null. You need to insert something first and then add.
+
+Test
+1
+-1
+You will get an error because of ambiguous column visitor id in the select clause.
+Also I'm pretty sure that column in group by is incorrect.
+2
+-2
+Your code won't work.
+You're not getting the idea of pivot table column usage.It can use only columns from select from inner query: profit and year. Pivot doesn't know what is SUM(Стоимость билета* ID Посетителя)) and Уровень комфорта.
+
+Mark: 7
+Test: 7
